@@ -9,13 +9,17 @@ form {
     margin: 20px auto;
     padding: 20px;
     font-size: 14px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    border: 3px solid #819492;
 }
 
 label {
     display: inline-block;
     position: relative;
-    width: 100%;
+    width: 75px;
     margin-bottom: 10px;
+
 }
 
 input {
@@ -28,18 +32,12 @@ input {
     box-sizing: border-box;
 }
 
-span {
-    display: inline-block;
-    width: 70px;
-    color: #00bad4;
-}
-
-.tooltip {
+.helptip {
     display: none;
     position: absolute;
-    top: 0;
-    right: 10px;
-    width: 230px;
+    top: 130px;
+    right: 250px;
+    width: 250px;
     padding: 6px;
     border: 2px solid #343636;
     background-color: #252828;
@@ -47,11 +45,11 @@ span {
     box-sizing: border-box;
 }
 
-button {
+.help {
     display: block;
     width: 135px;
     margin-top: 30px;
-    margin-left: 76px;
+    margin-left: 400px;
     padding: 5px;
     border: 1px solid #343636;
     border-radius: 5px;

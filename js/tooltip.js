@@ -1,18 +1,21 @@
 $(function () {
+    $('.helptip').hide();
 
-    var showTip = function(e) {
-        var input = $(e.target);
-        input.siblings('.tooltip').fadeIn(100);
-    };
+    $('[data-tooltip]').on('mouseenter', function (eventObject) {
+        var $dataTooltip = $(this).attr('data-tooltip');
+        var $helpId = $(this).attr('id');
+        $('.' + $helpId).text($dataTooltip).fadeIn()
+    });
 
-    var hideTip = function (e) {
-        var input = $(e.target);
-        input.siblings('.tooltip').fadeOut(100);
-    };
+    $('[data-tooltip]').on('mouseleave', function () {
+        $('.helptip').hide().text('')
+    });
 
-    $('input').hover(showTip, hideTip);
-
-    $('button').click(function () {
-        $('.tooltip').show();
+    $('.help').on('click',function() {
+        $('[data-tooltip]').each(function() {
+            var $dataTooltip = $(this).attr('data-tooltip');
+            var $helpId = $(this).attr('id');
+            $('.' + $helpId).text($dataTooltip).fadeIn()
+        });
     });
 });

@@ -9,23 +9,28 @@
     </head>
     <body>
         <form action="#">
-            <label>
-                <span>Firstname</span>
-                <input class="input" type="text">
-                <span class="tooltip">Please provide your firstname</span>
-            </label>
-            <label>
-                <span>Lastname</span>
-                <input class="input" type="text">
-                <span class="tooltip">Please provide also your lastname</span>
-            </label>
-            <label>
-                <span>Address</span>
-                <input class="input" type="text">
-                <span class="tooltip">Your home or work address</span>
-            </label>
-            <button>Show Help</button>
+            <div>
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" data-tooltip="Please provide your firstname">
+
+                <div class="helptip firstname"></div>
+            </div>
+
+            <div>
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" data-tooltip="Please provide also your lastname">
+
+                <div class="helptip lastname"></div>
+            </div>
+            
+            <div>
+                <label for="address">Address</label>
+                <input type="text" id="address" data-tooltip="Your home or work address">
+
+                <div class="helptip address"></div>
+            </div>
         </form>
+        <button class="help">Show Help</button>
         <script src="js/tooltip.js"></script>
     </body>
 </html>
