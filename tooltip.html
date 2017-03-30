@@ -5,32 +5,24 @@
         <title>Tooltip</title>
         <link rel="stylesheet" href="css/kosher-reset.css">
         <link rel="stylesheet" href="css/tooltip.css">
-        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+                integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+                crossorigin="anonymous">
+        </script>
     </head>
     <body>
         <form action="#">
             <div>
-                <label for="firstname">Firstname</label>
-                <input type="text" id="firstname" data-tooltip="Please provide your firstname">
-
-                <div class="helptip firstname"></div>
+                <label for="firstname">Firstname<input type="text" title="Please provide your firstname"></label>
             </div>
-
             <div>
-                <label for="lastname">Lastname</label>
-                <input type="text" id="lastname" data-tooltip="Please provide also your lastname">
-
-                <div class="helptip lastname"></div>
+                <label for="lastname">Lastname<input type="text" title="Please provide also your lastname"></label>
             </div>
-            
             <div>
-                <label for="address">Address</label>
-                <input type="text" id="address" data-tooltip="Your home or work address">
-
-                <div class="helptip address"></div>
+                <label for="address">Address<input type="text" title="Your home or work address"></label>
             </div>
+            <button class="help">Show Help</button>
         </form>
-        <button class="help">Show Help</button>
         <script src="js/tooltip.js"></script>
     </body>
 </html>
